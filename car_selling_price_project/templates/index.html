@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Selling Price</title>
+</head>
+<body>
+    <form action="/predict" method="POST">
+        <label for="Year">Year</label><br>
+        <input type="number" name="Year" id="Year"><br><br>
+
+        <label for="Present_Price">Present_Price</label><br>
+        <input type="text" name="Present_Price" id="Present_Price"><br><br>
+
+        <label for="Kms_Driven">Kms_Driven</label><br>
+        <input type="text" name="Kms_Driven" id="Kms_Driven"><br><br>
+        
+
+        <label>Fuel Type</label> <br>
+        <select name="Fuel_Type">
+            <option value="0">Petrol</option>
+            <option value="1">Diesel</option>
+            <option value="2">CNG</option>
+        </select><br><br>
+
+        <label>Seller_Type</label> <br>
+        <select name="Seller_Type">
+            <option value="0">Dealer</option>
+            <option value="1">Individual</option>
+        </select><br><br>
+        
+        <label>Transmission</label> <br>
+        <select name="Transmission">
+            <option value="0">Manual</option>
+            <option value="1">Automatic</option>
+        </select><br><br>
+
+
+        <label for="Owner">Owner</label><br>
+        <input type="text" name="Owner" id="Owner"><br><br>
+
+        
+        <input type="submit">
+        <br>
+        {{ Price }}
+    </form>
+</body>
+</html>
